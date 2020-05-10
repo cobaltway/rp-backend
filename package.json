@@ -1,0 +1,54 @@
+{
+  "name": "adonis-fullstack-app",
+  "version": "4.1.0",
+  "adonis-version": "4.1.0",
+  "description": "The fullstack application boilerplate for Adonisjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "adonis serve",
+    "dev": "nodemon server.js",
+    "test": "node ace test",
+    "forever": "forever start server.js",
+    "stop": "forever stop server.js",
+    "reload": "forever restart server.js"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/ally": "git+https://github.com/adonisjs/adonis-ally.git#3c8697f7e0281f5ebe2903426a20c8bb8d24cace",
+    "@adonisjs/auth": "^3.0.7",
+    "@adonisjs/bodyparser": "^2.0.5",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.9",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "@adonisjs/session": "^1.0.27",
+    "@adonisjs/shield": "^1.0.8",
+    "@adonisjs/validator": "^5.0.6",
+    "adonis-astria": "^0.1.3",
+    "pg": "^8.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "nodemon": "^1.18.10"
+  },
+  "autoload": {
+    "App": "./app"
+  },
+  "nodemonConfig": {
+    "colours": false,
+    "signal": "SIGHUP",
+    "env": {
+      "NODE_ENV": "development"
+    }
+  }
+}
